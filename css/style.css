@@ -18,6 +18,16 @@
     overflow: scroll;
 }
 
+.center-text {
+	text-align: center;
+}
+
+.right-text {
+	text-align: right;
+}
+
+.center-btn { text-align: right }
+
 @media screen and (min-width: 992px) {
 	.modal {
 		width: 40%;
