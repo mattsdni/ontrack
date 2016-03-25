@@ -6,6 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
+
+
+
 .icon-block {
   padding: 0 15px;
 }
@@ -26,10 +29,29 @@
 	text-align: right;
 }
 
+.semesterselected {
+	outline: 5px solid #42a5f5;
+}
+
+.semester {
+	padding-right: 20px;
+}
 .center-btn { text-align: right }
+
+
+.cardpad {
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
 
 @media screen and (min-width: 992px) {
 	.modal {
 		width: 40%;
 	}
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
 }

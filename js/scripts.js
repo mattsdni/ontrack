@@ -4,7 +4,9 @@ function removeClassFromSemester(class_name, semester_name) {
 	//console.log(semester_node);
 
 	//remove the right course
-	semester_node.getElementsByClassName("active")[0].remove();
+	var target = semester_node.getElementsByClassName("active")[0].remove();
+
+	//TODO: fade out or something
 
 }
 
@@ -35,4 +37,18 @@ function addClassToSemester(class_name, semester_name) {
 
 	//add to semester course list
 	semester_node.appendChild(course);
+}
+
+function highlightSemester(semester_name) {
+	//unhighlight all the other semesters
+	var semesters = document.getElementsByClassName("semester");
+	for (var i = 0; i < semesters.length; i++) {
+		semesters[i].classList.remove("semesterselected");
+	}
+
+	//highlight semester
+	document.getElementById(semester_name).className += " semesterselected";
+
+	
+
 }
